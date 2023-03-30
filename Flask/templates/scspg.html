@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #bee8f4;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #b9dfeb;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #aaeefb;
+    }
+    a {
+      color: #020a12;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Results</h1>
+  {{ obj | safe }}
+</body>
+</html>
